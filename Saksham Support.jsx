@@ -7,14 +7,14 @@ function App() {
       {/* Header Section */}
       <header className="header">
         <div className="logo">Saksham Support</div>
-        <nav className="navigation">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#shop">Equipment Shop</a></li>
-            <li><a href="#services">Gov Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+     <Navigation className="navigation">
+     <ul>
+     <li><a href="#home">Home</a></li>
+     <li><a href="#shop">Equipment Shop</a></li>
+    <li><a href="#services">Gov Services</a></li>
+     <li><a href="#contact">Contact</a></li>
+    </ul>
+     </Navigation>
       </header>
 
       {/* Main Hero Section */}
