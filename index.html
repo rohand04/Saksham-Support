@@ -57,6 +57,7 @@
      
  
     
+    
   
      
    <!-- COMPACT NEWSLETTER -->
@@ -101,12 +102,13 @@
                 <div class="footer-links-container">
 
                      <div class="footer-col">
-                        <h4>Quick Links</h4>
+                        <h4>Quick Access</h4>
                         <ul class="footer-links">
-                            <li><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Privacy Policy</li>
-                            <li><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Terms & Conditions</li>
-                            <li><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Rights & Reserves</li>
-                            <li><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Accessibility Statement</li>
+                            <li <a href="index.html"> <i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> </a> Home</li>
+                            <li><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Store</li>
+                            <li><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Sceme</li>
+                            <li><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> About</li>
+                             <li><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Account</li>
                         </ul>
                     </div>
 
@@ -147,6 +149,64 @@
         <div class="fab setting-fab"><i class="fas fa-cog"></i></div>
         <div class="fab call-fab"><i class="fas fa-phone"></i></div>
     </div> -->
- 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<div class="floating-tools-container">
+
+      <button id="scrollTopBtn" class="float-btn scroll-float" onclick="scrollToTop()" title="Go to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <div id="settingsPanel" class="settings-panel">
+        <div class="panel-header">
+            <h3>Settings</h3>
+            <button onclick="toggleSettings()" class="close-btn"><i class="fas fa-times"></i></button>
+        </div>
+        
+        <div class="setting-item">
+            <span>Text Size</span>
+            <div class="size-controls">
+                <button onclick="changeFontSize('decrease')"><i class="fas fa-minus"></i></button>
+                <span id="currentSizeLabel">100%</span>
+                <button onclick="changeFontSize('increase')"><i class="fas fa-plus"></i></button>
+            </div>
+        </div>
+
+        <div class="setting-item">
+            <span>Notifications</span>
+            <label class="switch">
+                <input type="checkbox" id="notifToggle" onclick="toggleNotifications()">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <div class="setting-item">
+            <span>Dark Mode</span>
+            <label class="switch">
+                <input type="checkbox" id="themeToggle" onclick="toggleTheme()">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        
+        
+        <div class="setting-item feedback-section">
+            <button onclick="openFeedback()" class="feedback-btn">
+                <i class="fas fa-comment-dots"></i> Give Feedback
+            </button>
+        </div>
+    </div>
+
+    <button id="settingsBtn" class="float-btn setting-float" onclick="toggleSettings()" title="Settings">
+        <i class="fas fa-cog fa-spin-hover"></i>
+    </button>
+    
+  
+</div>
+
+<script src="Script.js">
+   
+ </script>
 </body>
 </html>
